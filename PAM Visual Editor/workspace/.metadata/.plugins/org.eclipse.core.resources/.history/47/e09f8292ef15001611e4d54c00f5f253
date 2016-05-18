@@ -1,0 +1,25 @@
+	/*
+ * 
+ */
+package Platform_Metamodel.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class ProcessorPTypeItemSemanticEditPolicy extends Platform_Metamodel.diagram.edit.policies.Platform_MetamodelBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public ProcessorPTypeItemSemanticEditPolicy() {
+				super(Platform_Metamodel.diagram.providers.Platform_MetamodelElementTypes.ProcessorPType_4002);
+	}
+
+			/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getDestroyReferenceCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest req) {
+		return getGEFWrapper(new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyReferenceCommand(req));
+	}
+		
+	}

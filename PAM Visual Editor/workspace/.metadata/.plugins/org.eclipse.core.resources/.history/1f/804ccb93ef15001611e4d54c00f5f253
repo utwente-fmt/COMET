@@ -1,0 +1,17 @@
+	/*
+ * 
+ */
+package Platform_Metamodel.diagram.part;
+
+	/**
+ * @generated
+ */
+public class Platform_MetamodelNodeDescriptor extends org.eclipse.gmf.tooling.runtime.update.UpdaterNodeDescriptor {
+		/**
+ * @generated
+ */
+public Platform_MetamodelNodeDescriptor(org.eclipse.emf.ecore.EObject modelElement, int visualID) {
+	super(modelElement, visualID);
+}
+
+	}

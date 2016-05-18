@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PluginActivator.java&apos; to &apos;PlatformMetamodelGMF_Figures/src/activator&apos;&#x0D;&#x0A;- Original project: &apos;org.eclipse.epsilon.eugenia.examples.friends.figures&apos;&#x0D;&#x0A;- Destination element: &apos;PlatformMetamodelGMF_Figures/src/activator&apos;&#x0D;&#x0A;- Original element: &apos;org.eclipse.epsilon.eugenia.examples.friends.figures.activator.PluginActivator.java&apos;" description="Copy compilation unit" destination="=PlatformMetamodelGMF_Figures/src&lt;activator" element1="/src&lt;org.eclipse.epsilon.eugenia.examples.friends.figures.activator{PluginActivator.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1452796394702" units="1" version="1.0"/>
+</session>

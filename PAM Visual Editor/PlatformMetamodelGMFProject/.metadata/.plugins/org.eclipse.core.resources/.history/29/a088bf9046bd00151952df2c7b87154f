@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platform_metamodel:PlatformApplicationModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platform_metamodel="http://www.utwente.nl/sensation/platform_metamodel">
+  <islands identifier="Island 1"/>
+  <islands identifier="Island 2"/>
+  <processorTypes identifier="Samsung Exynos4210">
+    <possibleStates identifier="S1" frequency="1033" powerConsumption="18"/>
+    <possibleStates identifier="S2" isWorking="true" frequency="1033" powerConsumption="18"/>
+    <possibleStates identifier="S3" frequency="1222" powerConsumption="32"/>
+    <possibleStates identifier="S4" isWorking="true" frequency="1222" powerConsumption="32"/>
+    <possibleStates identifier="S5" frequency="1400" powerConsumption="48"/>
+    <possibleStates identifier="S6" isWorking="true" frequency="1400" powerConsumption="48"/>
+  </processorTypes>
+  <processors identifier="P1" pType="//@processorTypes.0" vfIsland="//@islands.0"/>
+  <processors identifier="P2" pType="//@processorTypes.0" vfIsland="//@islands.0"/>
+  <processors identifier="P3" pType="//@processorTypes.0" vfIsland="//@islands.1"/>
+  <processors identifier="P4" pType="//@processorTypes.0" vfIsland="//@islands.1"/>
+</platform_metamodel:PlatformApplicationModelRoot>

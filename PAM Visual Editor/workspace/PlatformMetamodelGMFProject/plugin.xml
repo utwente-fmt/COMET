@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlatformMetamodel -->
+      <package
+            uri="http://www.utwente.nl/sensation/platform_metamodel"
+            class="Platform_Metamodel.Platform_MetamodelPackage"
+            genModel="model/PlatformMetamodel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlatformMetamodel -->
+      <package
+            uri="http://www.utwente.nl/sensation/sensation_common_metamodel.ecore"
+            class="Sensation_Common_Metamodel.Sensation_Common_MetamodelPackage"
+            genModel="model/PlatformMetamodel.genmodel"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 6 elements from project &apos;PlatformMetamodelGMFProject&apos;&#x0D;&#x0A;- Original project: &apos;PlatformMetamodelGMFProject&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     PlatformMetamodel.genmodel&#x0D;&#x0A;     PlatformMetamodel.gmfgen&#x0D;&#x0A;     PlatformMetamodel.gmfgraph&#x0D;&#x0A;     PlatformMetamodel.gmfmap&#x0D;&#x0A;     PlatformMetamodel.gmftool&#x0D;&#x0A;     PlatformMetamodel.trace" description="Delete elements" element1="model/PlatformMetamodel.gmfgraph" element2="model/PlatformMetamodel.gmftool" element3="model/PlatformMetamodel.genmodel" element4="model/PlatformMetamodel.gmfgen" element5="model/PlatformMetamodel.trace" element6="model/PlatformMetamodel.gmfmap" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="6" stamp="1452851835724" subPackages="false" version="1.0"/>
+</session>

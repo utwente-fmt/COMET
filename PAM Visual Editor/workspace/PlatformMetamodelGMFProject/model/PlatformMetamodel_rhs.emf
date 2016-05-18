@@ -1,0 +1,72 @@
+@"http://www.eclipse.org/OCL/Import"(ecore="http://www.eclipse.org/emf/2002/Ecore#/", sensation_common_metamodel="http://www.utwente.nl/sensation/sensation_common_metamodel.ecore#/")
+@Ecore(invocationDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", settingDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", validationDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot")
+@namespace(uri="http://www.utwente.nl/sensation/platform_metamodel", prefix="platform_metamodel")
+@gmf
+package Platform_Metamodel;
+import "http://www.utwente.nl/sensation/sensation_common_metamodel.ecore";
+
+@Ecore(constraints="SingletonPlatformMetamodel")
+@GenModel(documentation="OCL Constraint: Single appearance in an island: One  processor can have only one reference per island.
+OCL Constraint: Island has processors:  All the items?s island reference in processorList of a VoltageFrequencyIsland must point to this island.
+OCL Constraint: Island frequency homogenity: All the processor in the same island run at the same frequency, no matter working or idle.")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(SingletonPlatformMetamodel="self.oclType().allInstances()->size() = 1")
+@gmf.diagram()
+class PlatformApplicationModelRoot {
+  val VoltageFrequencyIsland[+] islands;
+  val ProcessorType[+] processorTypes;
+  val Processor[+] processors;
+  
+}
+
+@Ecore(constraints="SingleAppearanceOnIsland IslandHasProcessors IslandFrequencyHomogenity")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(SingleAppearanceOnIsland="self.processors->forAll(p1, p2 | p1 <> p2 implies p1.identifier <> p2.identifier)", IslandHasProcessors="self.processors->forAll(p |p.island = self)", IslandFrequencyHomogenity="self.processors.initialState->forAll(cs1, cs2 | cs1.frequency = cs2.frequency)")
+@gmf.node(figure="figures.VoltageFrequencyIslandFigure", label.icon="false", label = "identifier", resizable = "true", size = "70,70", label.placement = "external", tool.name = "Voltage Frequency Island")
+class VoltageFrequencyIsland extends Sensation_Common_Metamodel.Identifiable {
+  !ordered ref Processor[*] processors;
+}
+
+@Ecore(constraints="UniqueStatesForProcessorType ProcessorTypeHasStates")
+@GenModel(documentation="OCL Constraint: Unique States for a ProcessorType: No two elements of a possibleStates list of a ProcessorType can be the same. An element of this set is uniquely defined with its two properties: frequency and isWorking.
+OCL Constraint: ProcessorType has states: All the items' processorType reference in possibleStates list of a ProcessorType must be pointing to this ProcessorType.")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(UniqueStatesForProcessorType="self.possibleStates->forAll(ps1, ps2 | ps1 <> ps2 implies ps1.frequency <>  ps2.frequency or ps1.isWorking <>  ps2.isWorking)", ProcessorTypeHasStates="self.possibleStates->forAll( s|s.processorType = self)")
+@gmf.node(figure="figures.ProcessorTypeFigure", label.icon="false", label = "identifier", resizable = "true", size = "70,70", label.placement = "external", tool.name = "Processor Type")
+class ProcessorType extends Sensation_Common_Metamodel.Identifiable {
+  val ProcessorState[+] possibleStates;
+}
+
+@Ecore(constraints="ProcessorBelongsToIsland ProcessorInValidState")
+@GenModel(documentation="OCL Constraint: Processor belongs to an island: A processor must be in processorList of its referenced island.
+OCL Constraint: Processor in valid state: A processor can be only in a state that is in possibleStates list of its ProcessorType.")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(ProcessorBelongsToIsland="self.island.processors->includes(self)", ProcessorInValidState="self.type.possibleStates->includes(self.initialState)")
+@gmf.node(figure="figures.ProcessorFigure", label.icon="false", label = "identifier", resizable = "true", size = "70,70", label.placement = "external", tool.name = "Processor")
+class Processor extends Sensation_Common_Metamodel.Identifiable {
+  ref ProcessorState[1] initialState;
+  @gmf.link(label.text = "type", target.decoration="closedarrow", tool.name = "Processor->Processor Type", tool.small.path= "icons/p2pt.gif" , tool.large.path= "icons/p2pt.gif") 
+  ref ProcessorType[1] pType; 
+  @gmf.link(label.text = "island", target.decoration="filledclosedarrow", tool.name = "Processor->Voltage Frequency Island", tool.small.path= "icons/p2is.gif", tool.large.path= "icons/p2is.gif") 
+  ref VoltageFrequencyIsland[1] vfIsland;  
+}
+
+@Ecore(constraints="StateBelongsToProcessorType SourceOfStateChange UniqueStateChange")
+@GenModel(documentation="OCL Constraint: State belongs to ProcessorType: A FrequencyPowerRelation must be in possibleStates list of its referenced ProcessorType.
+OCL Constraint: Source of State Change: FrequencyPowerRelation defines a list for possible state changes from this instance. Source reference of all the items in the list must be this instance.
+OCL Constraint: Possible Transition Count: The number of possible transitions from an idle state of a processor is between [1..3]. The number of possible transitions from a working state of a processor is 1.
+OCL Constraint: Unique State Change: No two elements of possibleStateChanges list of a FrequencyPowerRelation can be the same. An element of this set is uniquely defined with its two properties: source and target.")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(StateBelongsToProcessorType="self.processorType.possibleStates->includes(self)", SourceOfStateChange="self.possibleStateChanges->forAll (psc | psc.source = self)", UniqueStateChange="self.possibleStateChanges->forAll(sc1, sc2 | sc1 <> sc2 implies sc1.source <>  sc2.source or sc1.target <>  sc2.target)")
+class ProcessorState extends Sensation_Common_Metamodel.Identifiable {
+  attr boolean[1] isWorking;
+  val ProcessorStateChange[*] possibleStateChanges;
+  ref ProcessorType[1] processorType;
+  attr int frequency;
+  attr int powerConsumption;
+}
+
+@Ecore(constraints="ValidStateChanges PossibleTransitions")
+@GenModel(documentation="OCL Constraint: Valid State Changes: Both source and target references of a ProcessorStateChange must belong to the same ProcessorType.
+OCL Constraint: Possible Transitions: ProcessorStateChange supports the following transitions: (a) Changing from the idle location in a certain frequency to the working location in the same frequency. (b) Changing from the idle location in a certain frequency to the idle location in the different frequency. (c) Changing from the working location in a certain frequency to the idle location in the same frequency.")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(ValidStateChanges="self.source.processorType = self.target.processorType", PossibleTransitions="self.source <> self.target")
+class ProcessorStateChange {
+  ref ProcessorState[1] source;
+  ref ProcessorState[1] target;
+  attr int powerCost;
+}

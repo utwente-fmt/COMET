@@ -1,0 +1,133 @@
+<sdf3 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" type="sdf"
+      xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd">
+  <applicationGraph name="Viola-Jones face detector">
+    <sdf name="face_detection" type="face_detection">
+      <actor name="im_read" type="a">
+        <port name="out0" type="out" rate="1"/>
+        <port name="in0" type="in" rate="1"/>
+        <port name="out1" type="out" rate="1"/>
+        <port name="in1" type="in" rate="1"/>
+        <port name="out2" type="out" rate="1"/>
+        <port name="in2" type="in" rate="1"/>
+      </actor>
+      <actor name="dupl_im" type="b">
+        <port name="in0" type="in" rate="1"/>
+        <port name="out0" type="out" rate="1"/>
+        <port name="in1" type="in" rate="1"/>
+        <port name="out1" type="out" rate="1"/>
+        <port name="in2" type="in" rate="1"/>
+        <port name="out2" type="out" rate="1"/>
+      </actor>
+      <actor name="integral" type="c">
+        <port name="in0" type="in" rate="1"/>
+        <port name="out0" type="out" rate="1"/>
+        <port name="out1" type="out" rate="2"/>
+        <port name="in1" type="in" rate="2"/>
+        <port name="out2" type="out" rate="1"/>
+        <port name="in2" type="in" rate="1"/>
+      </actor>
+      <actor name="haar_det" type="d">
+        <port name="in0" type="in" rate="2"/>
+        <port name="out0" type="out" rate="2"/>
+        <port name="out1" type="out" rate="27"/>
+        <port name="in1" type="in" rate="27"/>
+        <port name="out2" type="out" rate="26"/>
+        <port name="in2" type="in" rate="26"/>
+        <port name="out3" type="out" rate="1"/>
+        <port name="in3" type="in" rate="1"/>
+      </actor>
+      <actor name="grp_rect" type="e">
+        <port name="out0" type="out" rate="1"/>
+        <port name="in1" type="in" rate="1"/>
+        <port name="in0" type="in" rate="1"/>
+        <port name="out1" type="out" rate="1"/>
+        <port name="out2" type="out" rate="1"/>
+        <port name="in2" type="in" rate="1"/>
+      </actor>
+      <actor name="col_obj" type="A1125089187">
+        <port name="out0" type="out" rate="1"/>
+        <port name="in0" type="in" rate="1"/>
+        <port name="in1" type="in" rate="27"/>
+        <port name="out1" type="out" rate="27"/>
+        <port name="in2" type="in" rate="26"/>
+        <port name="out2" type="out" rate="26"/>
+        <port name="out3" type="out" rate="1"/>
+        <port name="in3" type="in" rate="1"/>
+      </actor>
+      <actor name="haar_scal" type="A1802928841">
+        <port name="in0" type="in" rate="1"/>
+        <port name="out1" type="out" rate="1"/>
+        <port name="out0" type="out" rate="1"/>
+        <port name="in1" type="in" rate="1"/>
+      </actor>
+
+      <channel name="im_read2dupl_im" srcActor="im_read" srcPort="out0" dstActor="dupl_im" dstPort="in0" initialTokens="0"/>
+      <channel name="dupl_im2im_read" srcActor="dupl_im" srcPort="out0" dstActor="im_read" dstPort="in0" initialTokens="1"/>
+
+      <channel name="grp_rect2im_read" srcActor="grp_rect" srcPort="out0" dstActor="im_read" dstPort="in1" initialTokens="1"/>
+      <channel name="im_read2grp_rect" srcActor="im_read" srcPort="out1" dstActor="grp_rect" dstPort="in1" initialTokens="0"/>
+
+      <channel name="dupl_im2integral" srcActor="dupl_im" srcPort="out1" dstActor="integral" dstPort="in0" initialTokens="0"/>
+      <channel name="integral2dupl_im" srcActor="integral" srcPort="out0" dstActor="dupl_im" dstPort="in1" initialTokens="1"/>
+
+      <channel name="integral2haar_det" srcActor="integral" srcPort="out1" dstActor="haar_det" dstPort="in0" initialTokens="0"/>
+      <channel name="haar_det2integral" srcActor="haar_det" srcPort="out0" dstActor="integral" dstPort="in1" initialTokens="2"/>
+
+      <channel name="col_obj2grp_rect" srcActor="col_obj" srcPort="out0" dstActor="grp_rect" dstPort="in0" initialTokens="0"/>
+      <channel name="grp_rect2col_obj" srcActor="grp_rect" srcPort="out1" dstActor="col_obj" dstPort="in0" initialTokens="1"/>
+
+      <channel name="haar_det2col_obj" srcActor="haar_det" srcPort="out1" dstActor="col_obj" dstPort="in1" initialTokens="0"/>
+      <channel name="col_obj2haar_det" srcActor="col_obj" srcPort="out1" dstActor="haar_det" dstPort="in1" initialTokens="27"/>
+
+      <channel name="haar_det2haar_scal" srcActor="haar_det" srcPort="out2" dstActor="haar_scal" dstPort="in0" initialTokens="0"/>
+      <channel name="haar_scal2haar_det" srcActor="haar_scal" srcPort="out0" dstActor="haar_det" dstPort="in2" initialTokens="26"/>
+
+      <channel name="haar_scal2col_obj" srcActor="haar_scal" srcPort="out1" dstActor="col_obj" dstPort="in2" initialTokens="0"/>
+      <channel name="col_obj2haar_scal" srcActor="col_obj" srcPort="out2" dstActor="haar_scal" dstPort="in1" initialTokens="26"/>
+
+      <channel name="im_read2im_read" srcActor="im_read" srcPort="out2" dstActor="im_read" dstPort="in2" initialTokens="1"/>
+      <channel name="dupl_im2dupl_im" srcActor="dupl_im" srcPort="out2" dstActor="dupl_im" dstPort="in2" initialTokens="1"/>
+      <channel name="integral2integral" srcActor="integral" srcPort="out2" dstActor="integral" dstPort="in2" initialTokens="1"/>
+      <channel name="haar_det2haar_det" srcActor="haar_det" srcPort="out3" dstActor="haar_det" dstPort="in3" initialTokens="1"/>
+      <channel name="grp_rect2grp_rect" srcActor="grp_rect" srcPort="out2" dstActor="grp_rect" dstPort="in2" initialTokens="1"/>
+      <channel name="col_obj2col_obj" srcActor="col_obj" srcPort="out3" dstActor="col_obj" dstPort="in3" initialTokens="1"/>
+    </sdf>
+    <sdfProperties>
+      <actorProperties actor="im_read">
+        <processor type="x86_64" default="true">
+          <executionTime time="138"/>
+        </processor>
+      </actorProperties>
+      <actorProperties actor="dupl_im">
+        <processor type="x86_64" default="true">
+          <executionTime time="81"/>
+        </processor>
+      </actorProperties>
+      <actorProperties actor="integral">
+        <processor type="x86_64" default="true">
+          <executionTime time="14"/>
+        </processor>
+      </actorProperties>
+      <actorProperties actor="haar_det">
+        <processor type="x86_64" default="true">
+          <executionTime time="35"/>
+        </processor>
+      </actorProperties>
+      <actorProperties actor="grp_rect">
+        <processor type="x86_64" default="true">
+          <executionTime time="6"/>
+        </processor>
+      </actorProperties>
+      <actorProperties actor="col_obj">
+        <processor type="x86_64" default="true">
+          <executionTime time="73"/>
+        </processor>
+      </actorProperties>
+      <actorProperties actor="haar_scal">
+        <processor type="x86_64" default="true">
+          <executionTime time="21"/>
+        </processor>
+      </actorProperties>
+      </sdfProperties>
+  </applicationGraph>
+</sdf3>

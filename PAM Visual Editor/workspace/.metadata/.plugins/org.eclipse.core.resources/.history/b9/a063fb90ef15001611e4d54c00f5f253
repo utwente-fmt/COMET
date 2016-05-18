@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+package Platform_Metamodel.diagram.edit.helpers;
+
+/**
+ * @generated
+ */
+public class Platform_MetamodelBaseEditHelper extends org.eclipse.gmf.tooling.runtime.edit.helpers.GeneratedEditHelperBase {
+
+		
+		
+	
+	
+	
+	
+	
+	}

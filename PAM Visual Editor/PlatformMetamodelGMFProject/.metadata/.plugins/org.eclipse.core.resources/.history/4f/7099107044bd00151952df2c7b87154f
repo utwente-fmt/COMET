@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:platform_metamodel="http://www.utwente.nl/sensation/platform_metamodel" xmi:id="_a21FkL1DEeWkb_CKfHchQQ" type="Platform_Metamodel" name="default.platform_metamodel_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_a21Fkb1DEeWkb_CKfHchQQ"/>
+  <element xmi:type="platform_metamodel:PlatformApplicationModelRoot" href="default.platform_metamodel#/"/>
+</notation:Diagram>

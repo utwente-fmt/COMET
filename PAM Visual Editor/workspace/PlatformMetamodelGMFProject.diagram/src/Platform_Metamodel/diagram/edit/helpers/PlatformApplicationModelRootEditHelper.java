@@ -1,0 +1,12 @@
+/*
+ * 
+ */
+package Platform_Metamodel.diagram.edit.helpers;
+
+/**
+ * @generated
+ */
+public class PlatformApplicationModelRootEditHelper
+		extends
+		Platform_Metamodel.diagram.edit.helpers.Platform_MetamodelBaseEditHelper {
+}

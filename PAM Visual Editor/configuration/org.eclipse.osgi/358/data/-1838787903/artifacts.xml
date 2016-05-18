@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='D:\State of the Art\COMET\PAM Visual Editor\Eclipse Luna GMF\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1462971866145'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='5'>
+    <artifact classifier='osgi.bundle' id='org.junit' version='4.11.0.v201303080030'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/State%20of%20the%20Art/COMET/PAM%20Visual%20Editor/Eclipse%20Luna%20GMF/plugins/org.junit_4.11.0.v201303080030/'/>
+        <property name='file.name' value='D:\State of the Art\COMET\PAM Visual Editor\Eclipse Luna GMF\plugins\org.junit_4.11.0.v201303080030'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.sdk' version='4.4.0.v20140606-1215'>
+      <properties size='2'>
+        <property name='artifact.size' value='12288'/>
+        <property name='download.size' value='12288'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/State%20of%20the%20Art/COMET/PAM%20Visual%20Editor/Eclipse%20Luna%20GMF/plugins/org.eclipse.sdk_4.4.0.v20140606-1215/'/>
+        <property name='file.name' value='D:\State of the Art\COMET\PAM Visual Editor\Eclipse Luna GMF\plugins\org.eclipse.sdk_4.4.0.v20140606-1215'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.intro.universal' version='3.2.700.v20130904-1701'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/State%20of%20the%20Art/COMET/PAM%20Visual%20Editor/Eclipse%20Luna%20GMF/plugins/org.eclipse.ui.intro.universal_3.2.700.v20130904-1701/'/>
+        <property name='file.name' value='D:\State of the Art\COMET\PAM Visual Editor\Eclipse Luna GMF\plugins\org.eclipse.ui.intro.universal_3.2.700.v20130904-1701'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.themes' version='1.0.0.v20140604-1608'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/State%20of%20the%20Art/COMET/PAM%20Visual%20Editor/Eclipse%20Luna%20GMF/plugins/org.eclipse.ui.themes_1.0.0.v20140604-1608/'/>
+        <property name='file.name' value='D:\State of the Art\COMET\PAM Visual Editor\Eclipse Luna GMF\plugins\org.eclipse.ui.themes_1.0.0.v20140604-1608'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.platform' version='4.4.0.v20140606-1215'>
+      <properties size='2'>
+        <property name='artifact.size' value='12288'/>
+        <property name='download.size' value='12288'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/State%20of%20the%20Art/COMET/PAM%20Visual%20Editor/Eclipse%20Luna%20GMF/plugins/org.eclipse.platform_4.4.0.v20140606-1215/'/>
+        <property name='file.name' value='D:\State of the Art\COMET\PAM Visual Editor\Eclipse Luna GMF\plugins\org.eclipse.platform_4.4.0.v20140606-1215'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

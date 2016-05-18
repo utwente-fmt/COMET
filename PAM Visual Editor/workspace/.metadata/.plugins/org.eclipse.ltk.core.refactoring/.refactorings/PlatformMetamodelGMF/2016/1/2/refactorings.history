@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;images&apos;&#x0D;&#x0A;- Original project: &apos;PlatformMetamodelGMF&apos;&#x0D;&#x0A;- Destination element: &apos;images&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     processor.png&#x0D;&#x0A;     island.png&#x0D;&#x0A;     processor_type.png" description="Copy files" element1="pictures/processor.png" element2="pictures/island.png" element3="pictures/processor_type.png" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1452801949747" target="/PlatformMetamodelGMF_Figures/images" units="0" version="1.0"/>
+</session>

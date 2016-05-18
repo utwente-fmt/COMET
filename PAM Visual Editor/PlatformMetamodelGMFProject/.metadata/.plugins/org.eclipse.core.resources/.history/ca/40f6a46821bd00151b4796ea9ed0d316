@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:platform_metamodel="http://www.utwente.nl/sensation/platform_metamodel" xmi:id="_ALHwYL0hEeWjNI6UIRrhGQ" type="Platform_Metamodel" name="default.platform_metamodel_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_AlKBAL0hEeWjNI6UIRrhGQ" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AlTyAL0hEeWjNI6UIRrhGQ" type="5004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AlTyAb0hEeWjNI6UIRrhGQ" y="5"/>
+    </children>
+    <element xmi:type="platform_metamodel:Processor" href="default.platform_metamodel#//@processors.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AlKBAb0hEeWjNI6UIRrhGQ" x="114" y="146"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_AyQB0L0hEeWjNI6UIRrhGQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AyQB070hEeWjNI6UIRrhGQ" type="5003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AyQB1L0hEeWjNI6UIRrhGQ" y="5"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AyQB1b0hEeWjNI6UIRrhGQ" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_CorX8L0hEeWjNI6UIRrhGQ" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_CorX8r0hEeWjNI6UIRrhGQ" type="5002">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_CorX870hEeWjNI6UIRrhGQ" y="5"/>
+        </children>
+        <element xmi:type="platform_metamodel:ProcessorState" href="default.platform_metamodel#//@processorTypes.0/@possibleStates.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CorX8b0hEeWjNI6UIRrhGQ" x="115" y="67"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_DdVvEL0hEeWjNI6UIRrhGQ" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_DdVvEr0hEeWjNI6UIRrhGQ" type="5002">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_DdVvE70hEeWjNI6UIRrhGQ" y="5"/>
+        </children>
+        <element xmi:type="platform_metamodel:ProcessorState" href="default.platform_metamodel#//@processorTypes.0/@possibleStates.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DdVvEb0hEeWjNI6UIRrhGQ" x="283" y="66"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_AyQB0b0hEeWjNI6UIRrhGQ"/>
+    <element xmi:type="platform_metamodel:ProcessorType" href="default.platform_metamodel#//@processorTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AyQB0r0hEeWjNI6UIRrhGQ" x="547" y="199" width="390" height="270"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_BFvlkL0hEeWjNI6UIRrhGQ" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BFvlkr0hEeWjNI6UIRrhGQ" type="5001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BFvlk70hEeWjNI6UIRrhGQ" y="5"/>
+    </children>
+    <element xmi:type="platform_metamodel:VoltageFrequencyIsland" href="default.platform_metamodel#//@islands.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BFvlkb0hEeWjNI6UIRrhGQ" x="84" y="408"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ALHwYb0hEeWjNI6UIRrhGQ"/>
+  <element xmi:type="platform_metamodel:PlatformApplicationModelRoot" href="default.platform_metamodel#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_FBnlQL0hEeWjNI6UIRrhGQ" type="4001" source="_CorX8L0hEeWjNI6UIRrhGQ" target="_DdVvEL0hEeWjNI6UIRrhGQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_FBnlQb0hEeWjNI6UIRrhGQ" fontName="Segoe UI"/>
+    <element xmi:type="platform_metamodel:ProcessorStateChange" href="default.platform_metamodel#//@processorTypes.0/@possibleStates.0/@possibleStateChanges.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FBnlQr0hEeWjNI6UIRrhGQ" points="[15, -3, -111, -3]$[127, -15, 1, -15]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GRDz4L0hEeWjNI6UIRrhGQ" type="4001" source="_DdVvEL0hEeWjNI6UIRrhGQ" target="_CorX8L0hEeWjNI6UIRrhGQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GRDz4b0hEeWjNI6UIRrhGQ" fontName="Segoe UI"/>
+    <element xmi:type="platform_metamodel:ProcessorStateChange" href="default.platform_metamodel#//@processorTypes.0/@possibleStates.1/@possibleStateChanges.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GRDz4r0hEeWjNI6UIRrhGQ" points="[-15, -7, 114, 1]$[-128, -15, 1, -7]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GRDz470hEeWjNI6UIRrhGQ" id="(0.425,0.225)"/>
+  </edges>
+</notation:Diagram>

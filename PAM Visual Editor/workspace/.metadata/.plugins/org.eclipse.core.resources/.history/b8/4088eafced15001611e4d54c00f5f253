@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgen:GenEditorGenerator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel" copyrightText="">
+  <diagram visualID="1000" editPartClassName="PlatformApplicationModelRootEditPart" itemSemanticEditPolicyClassName="PlatformApplicationModelRootItemSemanticEditPolicy" canonicalEditPolicyClassName="PlatformApplicationModelRootCanonicalEditPolicy" iconProviderPriority="Low" validationProviderPriority="Low" validationEnabled="true" validationDecorators="true" liveValidationUIFeedback="true">
+    <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
+    <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="PlatformApplicationModelRootEditHelper"/>
+    <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
+    <containsShortcutsTo>Platform_Metamodel</containsShortcutsTo>
+    <shortcutsProvidedFor>Platform_Metamodel</shortcutsProvidedFor>
+    <domainDiagramElement href="PlatformMetamodel.genmodel#//Platform_Metamodel/PlatformApplicationModelRoot"/>
+    <childNodes visualID="3001" editPartClassName="ProcessorStateEditPart" itemSemanticEditPolicyClassName="ProcessorStateItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorStateViewFactory" canonicalEditPolicyClassName="ProcessorStateCanonicalEditPolicy" graphicalNodeEditPolicyClassName="ProcessorStateGraphicalNodeEditPolicy" createCommandClassName="ProcessorStateCreateCommand" containers="//@diagram/@compartments.0">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ProcessorStateEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorStateFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorStateFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureProcessorStateIsWorkingLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureProcessorStateFrequencyLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureProcessorStatePowerConsumptionLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorStateFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureProcessorStateIsWorkingLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureProcessorStateIsWorkingLabelFigure.setText(&quot;&quot;);&#xA;&#xA;this.add(fFigureProcessorStateIsWorkingLabelFigure);&#xA;&#xA;&#xA;&#xA;fFigureProcessorStateFrequencyLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureProcessorStateFrequencyLabelFigure.setText(&quot;&quot;);&#xA;&#xA;this.add(fFigureProcessorStateFrequencyLabelFigure);&#xA;&#xA;&#xA;&#xA;fFigureProcessorStatePowerConsumptionLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureProcessorStatePowerConsumptionLabelFigure.setText(&quot;&quot;);&#xA;&#xA;this.add(fFigureProcessorStatePowerConsumptionLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureProcessorStateIsWorkingLabelFigure() {&#xA;&#x9;&#x9;return fFigureProcessorStateIsWorkingLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureProcessorStateFrequencyLabelFigure() {&#xA;&#x9;&#x9;return fFigureProcessorStateFrequencyLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureProcessorStatePowerConsumptionLabelFigure() {&#xA;&#x9;&#x9;return fFigureProcessorStatePowerConsumptionLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorState"/>
+        <containmentMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorType/possibleStates"/>
+        <childMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorType/possibleStates"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5002" editPartClassName="ProcessorStateIdentifierEditPart" itemSemanticEditPolicyClassName="ProcessorStateIdentifierItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorStateIdentifierViewFactory">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorStateLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorStateLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorStateLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;ProcessorState&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Sensation_Common_Metamodel/Identifiable/identifier"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="5003" editPartClassName="ProcessorStateIsWorkingEditPart" itemSemanticEditPolicyClassName="ProcessorStateIsWorkingItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorStateIsWorkingViewFactory">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureProcessorStateIsWorkingLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorState/isWorking"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="5004" editPartClassName="ProcessorStateFrequencyEditPart" itemSemanticEditPolicyClassName="ProcessorStateFrequencyItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorStateFrequencyViewFactory">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureProcessorStateFrequencyLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorState/frequency"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="5005" editPartClassName="ProcessorStatePowerConsumptionEditPart" itemSemanticEditPolicyClassName="ProcessorStatePowerConsumptionItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorStatePowerConsumptionViewFactory">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureProcessorStatePowerConsumptionLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorState/powerConsumption"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <topLevelNodes visualID="2001" editPartClassName="VoltageFrequencyIslandEditPart" itemSemanticEditPolicyClassName="VoltageFrequencyIslandItemSemanticEditPolicy" notationViewFactoryClassName="VoltageFrequencyIslandViewFactory" canonicalEditPolicyClassName="VoltageFrequencyIslandCanonicalEditPolicy" graphicalNodeEditPolicyClassName="VoltageFrequencyIslandGraphicalNodeEditPolicy" createCommandClassName="VoltageFrequencyIslandCreateCommand">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="VoltageFrequencyIslandEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="VoltageFrequencyIslandFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class VoltageFrequencyIslandFigure extends figures.VoltageFrequencyIslandFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public VoltageFrequencyIslandFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(70)&#xA;, getMapMode().DPtoLP(70)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="70" height="70"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="PlatformMetamodel.genmodel#//Platform_Metamodel/VoltageFrequencyIsland"/>
+        <containmentMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/PlatformApplicationModelRoot/islands"/>
+        <childMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/PlatformApplicationModelRoot/islands"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5001" editPartClassName="VoltageFrequencyIslandIdentifierEditPart" itemSemanticEditPolicyClassName="VoltageFrequencyIslandIdentifierItemSemanticEditPolicy" notationViewFactoryClassName="VoltageFrequencyIslandIdentifierViewFactory">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="VoltageFrequencyIslandLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class VoltageFrequencyIslandLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public VoltageFrequencyIslandLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;VoltageFrequencyIsland&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Sensation_Common_Metamodel/Identifiable/identifier"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2002" editPartClassName="ProcessorTypeEditPart" itemSemanticEditPolicyClassName="ProcessorTypeItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorTypeViewFactory" canonicalEditPolicyClassName="ProcessorTypeCanonicalEditPolicy" compartments="//@diagram/@compartments.0" graphicalNodeEditPolicyClassName="ProcessorTypeGraphicalNodeEditPolicy" createCommandClassName="ProcessorTypeCreateCommand">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ProcessorTypeEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorTypeFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorTypeFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fProcessorTypePossibleStatesCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorTypeFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(70)&#xA;, getMapMode().DPtoLP(70)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fProcessorTypePossibleStatesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fProcessorTypePossibleStatesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fProcessorTypePossibleStatesCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getProcessorTypePossibleStatesCompartmentFigure() {&#xA;&#x9;&#x9;return fProcessorTypePossibleStatesCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="70" height="70"/>
+      </viewmap>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorType"/>
+        <containmentMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/PlatformApplicationModelRoot/processorTypes"/>
+        <childMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/PlatformApplicationModelRoot/processorTypes"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5006" editPartClassName="ProcessorTypeIdentifierEditPart" itemSemanticEditPolicyClassName="ProcessorTypeIdentifierItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorTypeIdentifierViewFactory" elementIcon="true">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorTypeLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorTypeLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorTypeLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;ProcessorType&quot;);&#xA;this.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Sensation_Common_Metamodel/Identifiable/identifier"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2003" editPartClassName="ProcessorEditPart" itemSemanticEditPolicyClassName="ProcessorItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorViewFactory" canonicalEditPolicyClassName="ProcessorCanonicalEditPolicy" graphicalNodeEditPolicyClassName="ProcessorGraphicalNodeEditPolicy" createCommandClassName="ProcessorCreateCommand">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ProcessorEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorFigure extends figures.ProcessorFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(70)&#xA;, getMapMode().DPtoLP(70)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="70" height="70"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="PlatformMetamodel.genmodel#//Platform_Metamodel/Processor"/>
+        <containmentMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/PlatformApplicationModelRoot/processors"/>
+        <childMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/PlatformApplicationModelRoot/processors"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5007" editPartClassName="ProcessorIdentifierEditPart" itemSemanticEditPolicyClassName="ProcessorIdentifierItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorIdentifierViewFactory">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Processor&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Sensation_Common_Metamodel/Identifiable/identifier"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <links visualID="4001" editPartClassName="ProcessorStateChangeEditPart" itemSemanticEditPolicyClassName="ProcessorStateChangeItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorStateChangeViewFactory" createCommandClassName="ProcessorStateChangeCreateCommand" reorientCommandClassName="ProcessorStateChangeReorientCommand">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ProcessorStateChangeEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorStateChangeFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorStateChangeFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorStateChangeFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(-2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorStateChange"/>
+        <containmentMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorState/possibleStateChanges"/>
+        <childMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorState/possibleStateChanges"/>
+        <sourceMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorStateChange/source"/>
+        <targetMetaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorStateChange/target"/>
+      </modelFacet>
+      <labels visualID="6001" editPartClassName="ProcessorStateChangePowerCostEditPart" itemSemanticEditPolicyClassName="ProcessorStateChangePowerCostItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorStateChangePowerCostViewFactory">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorStateChangeLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorStateChangeLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorStateChangeLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;ProcessorStateChange&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="40"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="PlatformMetamodel.genmodel#//Platform_Metamodel/ProcessorStateChange/powerCost"/>
+        </modelFacet>
+      </labels>
+    </links>
+    <links visualID="4002" editPartClassName="ProcessorPTypeEditPart" itemSemanticEditPolicyClassName="ProcessorPTypeItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorPTypeViewFactory" createCommandClassName="ProcessorPTypeCreateCommand" reorientCommandClassName="ProcessorPTypeReorientCommand">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorPTypeFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorPTypeFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorPTypeFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;&#x9;df.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(-2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:FeatureLinkModelFacet">
+        <metaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/Processor/pType"/>
+      </modelFacet>
+      <labels visualID="6002" editPartClassName="ProcessorPTypeExternalLabelEditPart" itemSemanticEditPolicyClassName="ProcessorPTypeExternalLabelItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorPTypeLabelViewFactory" readOnly="true">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorPTypeExternalLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorPTypeExternalLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorPTypeExternalLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;type&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="40"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:DesignLabelModelFacet" parser="//@labelParsers/@implementations.1"/>
+      </labels>
+    </links>
+    <links visualID="4003" editPartClassName="ProcessorVfIslandEditPart" itemSemanticEditPolicyClassName="ProcessorVfIslandItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorVfIslandViewFactory" createCommandClassName="ProcessorVfIslandCreateCommand" reorientCommandClassName="ProcessorVfIslandReorientCommand">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorVfIslandFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorVfIslandFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorVfIslandFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(-2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:FeatureLinkModelFacet">
+        <metaFeature href="PlatformMetamodel.genmodel#//Platform_Metamodel/Processor/vfIsland"/>
+      </modelFacet>
+      <labels visualID="6003" editPartClassName="ProcessorVfIslandExternalLabelEditPart" itemSemanticEditPolicyClassName="ProcessorVfIslandExternalLabelItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorVfIslandLabelViewFactory" readOnly="true">
+        <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ProcessorVfIslandExternalLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ProcessorVfIslandExternalLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ProcessorVfIslandExternalLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;island&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="40"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:DesignLabelModelFacet" parser="//@labelParsers/@implementations.1"/>
+      </labels>
+    </links>
+    <compartments visualID="7001" editPartClassName="ProcessorTypeProcessorTypePossibleStatesCompartmentEditPart" itemSemanticEditPolicyClassName="ProcessorTypeProcessorTypePossibleStatesCompartmentItemSemanticEditPolicy" notationViewFactoryClassName="ProcessorTypeProcessorTypePossibleStatesCompartmentViewFactory" canonicalEditPolicyClassName="ProcessorTypeProcessorTypePossibleStatesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="ProcessorTypePossibleStatesCompartment" canCollapse="false" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getProcessorTypePossibleStatesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <palette>
+      <groups title="Objects" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Processor" description="Create new Processor" genNodes="//@diagram/@topLevelNodes.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Processor State" description="Create new Processor State" largeIconPath="icons/ps_l.gif" smallIconPath="icons/ps_s.gif" genNodes="//@diagram/@childNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Processor Type" description="Create new Processor Type" largeIconPath="icons/processor_type_icon.gif" smallIconPath="icons/processor_type_icon.gif" genNodes="//@diagram/@topLevelNodes.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Voltage Frequency Island" description="Create new Voltage Frequency Island" genNodes="//@diagram/@topLevelNodes.0"/>
+      </groups>
+      <groups title="Connections" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Processor State Change" description="Create new Processor State Change" largeIconPath="icons/psc.gif" smallIconPath="icons/psc.gif" genLinks="//@diagram/@links.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Processor->Processor Type" description="Create new Processor->Processor Type" largeIconPath="icons/p2pt.gif" smallIconPath="icons/p2pt.gif" genLinks="//@diagram/@links.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Processor->Voltage Frequency Island" description="Create new Processor->Voltage Frequency Island" largeIconPath="icons/p2is.gif" smallIconPath="icons/p2is.gif" genLinks="//@diagram/@links.2"/>
+      </groups>
+    </palette>
+    <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="PlatformMetamodelGMFProject.diagram.general" name="Platform_Metamodel Diagram">
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="PlatformMetamodelGMFProject.diagram.appearance" name="Appearance" kind="Appearance"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="PlatformMetamodelGMFProject.diagram.connections" name="Connections" kind="Connections"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="PlatformMetamodelGMFProject.diagram.printing" name="Printing" kind="Printing"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="PlatformMetamodelGMFProject.diagram.rulersAndGrid" name="Rulers And Grid" kind="RulersAndGrid"/>
+    </preferencePages>
+  </diagram>
+  <plugin printingEnabled="true">
+    <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
+    <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
+    <requiredPlugins>org.eclipse.gmf.runtime.draw2d.ui</requiredPlugins>
+  </plugin>
+  <editor/>
+  <navigator>
+    <childReferences child="//@diagram"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.2"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.0" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@childNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.0" child="//@diagram/@links.0" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@childNodes.0" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.0" child="//@diagram/@links.0" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.1" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.2" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.2" child="//@diagram/@links.1" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.2" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.2" child="//@diagram/@topLevelNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.2" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.2" child="//@diagram/@topLevelNodes.2" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.2" child="//@diagram/@links.2" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+  </navigator>
+  <diagramUpdater/>
+  <propertySheet>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="appearance"/>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="diagram"/>
+    <tabs xsi:type="gmfgen:GenCustomPropertyTab" iD="domain" label="Core">
+      <filter xsi:type="gmfgen:TypeTabFilter">
+        <types>org.eclipse.gmf.runtime.notation.View</types>
+        <types>org.eclipse.gef.EditPart</types>
+        <generatedTypes>abstractNavigatorItem</generatedTypes>
+      </filter>
+    </tabs>
+  </propertySheet>
+  <domainGenModel href="PlatformMetamodel.genmodel#/"/>
+  <labelParsers extensibleViaService="true">
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.1/@modelFacet //@diagram/@childNodes.0/@labels.2/@modelFacet //@diagram/@childNodes.0/@labels.3/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet"/>
+    <implementations xsi:type="gmfgen:ExternalParser" uses="//@diagram/@links.1/@labels.0/@modelFacet //@diagram/@links.2/@labels.0/@modelFacet"/>
+  </labelParsers>
+  <contextMenus context="//@diagram">
+    <items xsi:type="gmfgen:LoadResourceAction"/>
+  </contextMenus>
+</gmfgen:GenEditorGenerator>

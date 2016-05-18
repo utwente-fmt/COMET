@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/PlatformMetamodelGMFProject/src"
+    modelPluginID="PlatformMetamodelGMFProject" modelName="Platform_Metamodel" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>PlatformMetamodel.ecore</foreignModel>
+  <genPackages prefix="Platform_Metamodel" disposableProviderFactory="true" ecorePackage="PlatformMetamodel.ecore#/">
+    <genClasses ecoreClass="PlatformMetamodel.ecore#//PlatformApplicationModelRoot">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//PlatformApplicationModelRoot/islands"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//PlatformApplicationModelRoot/processorTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//PlatformApplicationModelRoot/processors"/>
+    </genClasses>
+    <genClasses ecoreClass="PlatformMetamodel.ecore#//VoltageFrequencyIsland">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//VoltageFrequencyIsland/processors"/>
+    </genClasses>
+    <genClasses ecoreClass="PlatformMetamodel.ecore#//ProcessorType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//ProcessorType/possibleStates"/>
+    </genClasses>
+    <genClasses ecoreClass="PlatformMetamodel.ecore#//Processor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//Processor/initialState"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//Processor/pType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//Processor/vfIsland"/>
+    </genClasses>
+    <genClasses ecoreClass="PlatformMetamodel.ecore#//ProcessorState">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//ProcessorState/possibleStateChanges"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//ProcessorState/processorType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PlatformMetamodel.ecore#//ProcessorState/isWorking"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PlatformMetamodel.ecore#//ProcessorState/frequency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PlatformMetamodel.ecore#//ProcessorState/powerConsumption"/>
+    </genClasses>
+    <genClasses ecoreClass="PlatformMetamodel.ecore#//ProcessorStateChange">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//ProcessorStateChange/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PlatformMetamodel.ecore#//ProcessorStateChange/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PlatformMetamodel.ecore#//ProcessorStateChange/powerCost"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

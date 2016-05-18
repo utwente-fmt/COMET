@@ -1,0 +1,68 @@
+<sdf3 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" type="sdf" 
+      xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd">
+    <applicationGraph name='Audio-Echo-Canceller'>
+	<sdf name="Audio-Echo-Canceller" type="audio-echo-canceller">
+            <actor name='OUT' type='A'>
+               <port name='outAEC' type='out' rate='1'/>
+               <port name='inAEC' type='in' rate='1'/>
+               <port name='inOUT' type='in' rate='1'/>
+               <port name='outOUT' type='out' rate='1'/>
+            </actor>
+            <actor name='AEC' type='B'>
+                <port name='inOUT' type='in' rate='23'/>
+                <port name='outOUT' type='out' rate='23'/>
+                <port name='inADC' type='in' rate='23'/>
+                <port name='outADC' type='out' rate='23'/>
+                <port name='outSRC' type='out' rate='23'/>
+                <port name='inSRC' type='in' rate='23'/>
+               <port name='inAEC' type='in' rate='1'/>
+               <port name='outAEC' type='out' rate='1'/>
+            </actor>
+            <actor name='ADC' type='C'>
+                <port name='inAEC' type='in' rate='1'/>
+                <port name='outAEC' type='out' rate='1'/>
+               <port name='inADC' type='in' rate='1'/>
+               <port name='outADC' type='out' rate='1'/>
+            </actor>
+            <actor name='SRC' type='D'>
+                <port name='inAEC' type='in' rate='1'/>
+                <port name='outAEC' type='out' rate='1'/>
+               <port name='inSRC' type='in' rate='1'/>
+               <port name='outSRC' type='out' rate='1'/>
+            </actor>
+            <channel name='OUT2AEC' srcActor='OUT' srcPort='outAEC' dstActor='AEC' dstPort='inOUT' initialTokens='44'/>
+            <channel name='AEC2OUT' srcActor='AEC' srcPort='outOUT' dstActor='OUT' dstPort='inAEC' initialTokens='0'/>
+            <channel name='AEC2ADC' srcActor='AEC' srcPort='outADC' dstActor='ADC' dstPort='inAEC' initialTokens='44'/>
+            <channel name='ADC2AEC' srcActor='ADC' srcPort='outAEC' dstActor='AEC' dstPort='inADC' initialTokens='0'/>
+            <channel name='AEC2SRC' srcActor='AEC' srcPort='outSRC' dstActor='SRC' dstPort='inAEC' initialTokens='44'/>
+            <channel name='SRC2AEC' srcActor='SRC' srcPort='outAEC' dstActor='AEC' dstPort='inSRC' initialTokens='0'/>
+            <channel name='AEC2AEC' srcActor='AEC' srcPort='outAEC' dstActor='AEC' dstPort='inAEC' initialTokens='1'/>
+            <channel name='SRC2SRC' srcActor='SRC' srcPort='outSRC' dstActor='SRC' dstPort='inSRC' initialTokens='1'/>
+            <channel name='ADC2ADC' srcActor='ADC' srcPort='outADC' dstActor='ADC' dstPort='inADC' initialTokens='1'/>
+            <channel name='OUT2OUT' srcActor='OUT' srcPort='outOUT' dstActor='OUT' dstPort='inOUT' initialTokens='1'/>
+          </sdf>
+        <sdfProperties>
+                <actorProperties actor='OUT'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/> 
+                        <!-- worst-case execution time in time units -->
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='AEC'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='ADC'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='SRC'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+        </sdfProperties>
+    </applicationGraph>
+</sdf3>

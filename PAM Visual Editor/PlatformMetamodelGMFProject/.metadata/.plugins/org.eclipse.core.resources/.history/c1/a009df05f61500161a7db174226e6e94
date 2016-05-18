@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:platform_metamodel="http://www.utwente.nl/sensation/platform_metamodel" xmi:id="_-8ReIBX1Eea2YsBX8Hxz5Q" type="Platform_Metamodel" name="waheed.platform_metamodel_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_-8ReIRX1Eea2YsBX8Hxz5Q"/>
+  <element xmi:type="platform_metamodel:PlatformApplicationModelRoot" href="waheed.platform_metamodel#/"/>
+</notation:Diagram>

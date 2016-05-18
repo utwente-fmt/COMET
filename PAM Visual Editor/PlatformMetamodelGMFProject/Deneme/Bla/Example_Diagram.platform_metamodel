@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platform_metamodel:PlatformApplicationModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platform_metamodel="http://www.utwente.nl/sensation/platform_metamodel">
+  <islands identifier="vfi1" processors="//@processors.0 //@processors.1"/>
+  <islands identifier="VFI2" processors="//@processors.2 //@processors.3"/>
+  <processorTypes identifier="samsung">
+    <possibleStates identifier="state4" processorType="//@processorTypes.0" frequency="1033" powerConsumption="1">
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.0" target="//@processorTypes.0/@possibleStates.1"/>
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.0" target="//@processorTypes.0/@possibleStates.2" powerCost="2"/>
+    </possibleStates>
+    <possibleStates identifier="state3" processorType="//@processorTypes.0" isWorking="true" frequency="1033" powerConsumption="18">
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.1" target="//@processorTypes.0/@possibleStates.0"/>
+    </possibleStates>
+    <possibleStates identifier="state2" processorType="//@processorTypes.0" frequency="1400" powerConsumption="4">
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.2" target="//@processorTypes.0/@possibleStates.3"/>
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.2" target="//@processorTypes.0/@possibleStates.0" powerCost="1"/>
+    </possibleStates>
+    <possibleStates identifier="state1" processorType="//@processorTypes.0" isWorking="true" frequency="1400" powerConsumption="46">
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.3" target="//@processorTypes.0/@possibleStates.2"/>
+    </possibleStates>
+  </processorTypes>
+  <processors identifier="p1" initialState="//@processorTypes.0/@possibleStates.2" pType="//@processorTypes.0" vfIsland="//@islands.0"/>
+  <processors identifier="p2" initialState="//@processorTypes.0/@possibleStates.2" pType="//@processorTypes.0" vfIsland="//@islands.0"/>
+  <processors identifier="p3" initialState="//@processorTypes.0/@possibleStates.2" pType="//@processorTypes.0" vfIsland="//@islands.1"/>
+  <processors identifier="p4" initialState="//@processorTypes.0/@possibleStates.2" pType="//@processorTypes.0" vfIsland="//@islands.1"/>
+</platform_metamodel:PlatformApplicationModelRoot>

@@ -1,0 +1,27 @@
+/** Returns the counter variable name for a given actor. */
+operation InSDF!Actor getCounterName() : String {
+	return "counter_" + self.getVarName();
+}
+
+/** Returns the identifying variable name for a given actor. */
+operation InSDF!Actor getVarName() : String {
+	return self.identifier.toLowerCase();
+}
+
+/** Retrieves the content of a mixed complex type, under the
+  * assumption that this is the last item in the element.
+  */
+operation Any getText() : String {
+	return self.mixed.last().value;
+}
+/** Returns the buffer variable name derived from a given channel. */
+operation InSDF!Channel getBufferName() : String {
+	return "buff_" + self.identifier;
+}
+/*****************************************************************************/
+/*****************************************************************************/
+//
+//                         UPPAAL Model get() OPERATIONS/FUNCTIONS
+//
+/*****************************************************************************/
+/*****************************************************************************/

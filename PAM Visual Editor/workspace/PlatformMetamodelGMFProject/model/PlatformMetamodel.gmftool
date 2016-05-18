@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="Platform_MetamodelPalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Objects"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Processor"
+          description="Create new Processor">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Processor State"
+          description="Create new Processor State">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/ps_s.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/ps_l.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Processor Type"
+          description="Create new Processor Type">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/processor_type_icon.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/processor_type_icon.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Voltage Frequency Island"
+          description="Create new Voltage Frequency Island">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Connections"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Processor State Change"
+          description="Create new Processor State Change">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/psc.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/psc.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Processor->Processor Type"
+          description="Create new Processor->Processor Type">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/p2pt.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/p2pt.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Processor->Voltage Frequency Island"
+          description="Create new Processor->Voltage Frequency Island">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/p2is.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/p2is.gif"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

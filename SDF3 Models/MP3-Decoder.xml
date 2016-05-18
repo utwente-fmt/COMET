@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="sdf" version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd">
+  <applicationGraph name='MP3-Decoder'>
+    <sdf name='MP3-Decoder' type='mp3decoder'>
+      <actor name='huffman' type='Huffman'>
+          <port name='p0' type='out' rate='2'/>
+          <port name='p1' type='out' rate='2'/>
+          <port name='p2' type='in' rate='1'/>
+          <port name='p3' type='out' rate='1'/>
+          <port name='p4' type='in' rate='2'/>
+          <port name='p5' type='in' rate='2'/>
+      </actor>
+      <actor name='req0' type='Req'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+          <port name='p2' type='in' rate='1'/>
+          <port name='p3' type='out' rate='1'/>
+      </actor>
+      <actor name='reorder0' type='Reorder'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='req1' type='Req'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+          <port name='p2' type='in' rate='1'/>
+          <port name='p3' type='out' rate='1'/>
+      </actor>
+      <actor name='reorder1' type='Reorder'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='stereo' type='Stereo'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='in' rate='1'/>
+          <port name='p2' type='out' rate='1'/>
+          <port name='p3' type='out' rate='1'/>
+      </actor>
+      <actor name='aliasreduct0' type='AliasReduct'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='IMDCT0' type='IMDCT'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='freqinv0' type='FreqInv'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='synth0' type='Synth'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='aliasreduct1' type='AliasReduct'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='IMDCT1' type='IMDCT'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='freqinv1' type='FreqInv'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <actor name='synth1' type='Synth'>
+          <port name='p0' type='in' rate='1'/>
+          <port name='p1' type='out' rate='1'/>
+      </actor>
+      <channel name='ch0' srcActor='huffman' srcPort='p0' dstActor='req0' dstPort='p0'/>
+      <channel name='ch1' srcActor='huffman' srcPort='p1' dstActor='req1' dstPort='p0'/>
+      <channel name='ch2' srcActor='req0' srcPort='p1' dstActor='reorder0' dstPort='p0'/>
+      <channel name='ch3' srcActor='req1' srcPort='p1' dstActor='reorder1' dstPort='p0'/>
+      <channel name='ch4' srcActor='reorder0' srcPort='p1' dstActor='stereo' dstPort='p0'/>
+      <channel name='ch5' srcActor='reorder1' srcPort='p1' dstActor='stereo' dstPort='p1'/>
+      <channel name='ch6' srcActor='stereo' srcPort='p2' dstActor='aliasreduct0' dstPort='p0'/>
+      <channel name='ch7' srcActor='stereo' srcPort='p3' dstActor='aliasreduct1' dstPort='p0'/>
+      <channel name='ch8' srcActor='aliasreduct0' srcPort='p1' dstActor='IMDCT0' dstPort='p0'/>
+      <channel name='ch9' srcActor='aliasreduct1' srcPort='p1' dstActor='IMDCT1' dstPort='p0'/>
+      <channel name='ch10' srcActor='IMDCT0' srcPort='p1' dstActor='freqinv0' dstPort='p0'/>
+      <channel name='ch11' srcActor='IMDCT1' srcPort='p1' dstActor='freqinv1' dstPort='p0'/>
+      <channel name='ch12' srcActor='freqinv0' srcPort='p1' dstActor='synth0' dstPort='p0'/>
+      <channel name='ch13' srcActor='freqinv1' srcPort='p1' dstActor='synth1' dstPort='p0'/>
+      <channel name='ch14' srcActor='huffman' srcPort='p3' dstActor='huffman' dstPort='p2' initialTokens='1'/>
+      <channel name='ch15' srcActor='req0' srcPort='p3' dstActor='req0' dstPort='p2' initialTokens='1'/>
+      <channel name='ch16' srcActor='req1' srcPort='p3' dstActor='req1' dstPort='p2' initialTokens='1'/>
+      <channel name='ch21' srcActor='synth0' srcPort='p1' dstActor='huffman' dstPort='p4' initialTokens='2'/>
+      <channel name='ch22' srcActor='synth1' srcPort='p1' dstActor='huffman' dstPort='p5' initialTokens='2'/>
+    </sdf>
+        <sdfProperties>
+                <actorProperties actor='huffman'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/> 
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='req0'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='req1'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='reorder0'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='reorder1'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/> 
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='stereo'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='aliasreduct0'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='aliasreduct1'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='IMDCT0'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/> 
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='IMDCT1'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='freqinv0'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='freqinv1'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='synth0'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+                <actorProperties actor='synth1'>
+                    <processor type='p1' default='true'>
+                        <executionTime time='1'/>
+                    </processor>
+                </actorProperties>
+        </sdfProperties>
+  </applicationGraph>
+</sdf3>

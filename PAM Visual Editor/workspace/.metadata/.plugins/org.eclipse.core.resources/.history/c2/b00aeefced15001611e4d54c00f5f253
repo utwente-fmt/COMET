@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="Platform_Metamodel">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="FilledClosedArrow">
+      <template/>
+      <template x="-2" y="2"/>
+      <template x="-2" y="-2"/>
+      <template/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="ClosedArrow">
+      <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+      <template/>
+      <template x="-2" y="2"/>
+      <template x="-2" y="-2"/>
+      <template/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="FilledClosedArrow">
+      <template/>
+      <template x="-2" y="2"/>
+      <template x="-2" y="-2"/>
+      <template/>
+    </figures>
+    <descriptors name="VoltageFrequencyIslandFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="VoltageFrequencyIslandFigure" qualifiedClassName="figures.VoltageFrequencyIslandFigure">
+        <preferredSize dx="70" dy="70"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="VoltageFrequencyIslandLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="VoltageFrequencyIslandLabelFigure" text="VoltageFrequencyIsland"/>
+    </descriptors>
+    <descriptors name="ProcessorTypeFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ProcessorTypeFigure">
+        <preferredSize dx="70" dy="70"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Rectangle" name="ProcessorTypePossibleStatesCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getProcessorTypePossibleStatesCompartmentFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ProcessorTypeLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessorTypeLabelFigure" text="ProcessorType">
+        <maximumSize dx="10000" dy="50"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ProcessorFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="ProcessorFigure" qualifiedClassName="figures.ProcessorFigure">
+        <preferredSize dx="70" dy="70"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ProcessorLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessorLabelFigure" text="Processor"/>
+    </descriptors>
+    <descriptors name="ProcessorStateFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="ProcessorStateFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ProcessorStateIsWorkingLabelFigure"/>
+        <children xsi:type="gmfgraph:Label" name="ProcessorStateFrequencyLabelFigure"/>
+        <children xsi:type="gmfgraph:Label" name="ProcessorStatePowerConsumptionLabelFigure"/>
+      </actualFigure>
+      <accessors accessor="getFigureProcessorStateIsWorkingLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureProcessorStateFrequencyLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
+      <accessors accessor="getFigureProcessorStatePowerConsumptionLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="ProcessorStateLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessorStateLabelFigure" text="ProcessorState"/>
+    </descriptors>
+    <descriptors name="ProcessorStateChangeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ProcessorStateChangeFigure" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="ProcessorStateChangeLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessorStateChangeLabelLabel" text="ProcessorStateChange"/>
+    </descriptors>
+    <descriptors name="ProcessorPTypeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ProcessorPTypeFigure" targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors name="ProcessorPTypeExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessorPTypeExternalLabel" text="type"/>
+    </descriptors>
+    <descriptors name="ProcessorVfIslandFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ProcessorVfIslandFigure" targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors name="ProcessorVfIslandExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ProcessorVfIslandExternalLabel" text="island"/>
+    </descriptors>
+  </figures>
+  <nodes name="VoltageFrequencyIsland" figure="VoltageFrequencyIslandFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="70" dy="70"/>
+    </facets>
+  </nodes>
+  <nodes name="ProcessorType" figure="ProcessorTypeFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="70" dy="70"/>
+    </facets>
+  </nodes>
+  <nodes name="Processor" figure="ProcessorFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="70" dy="70"/>
+    </facets>
+  </nodes>
+  <nodes name="ProcessorState" figure="ProcessorStateFigure"/>
+  <connections name="ProcessorStateChange" figure="ProcessorStateChangeFigure"/>
+  <connections name="ProcessorPType" figure="ProcessorPTypeFigure"/>
+  <connections name="ProcessorVfIsland" figure="ProcessorVfIslandFigure"/>
+  <compartments name="ProcessorTypePossibleStatesCompartment" figure="ProcessorTypeFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="VoltageFrequencyIslandLabel" figure="VoltageFrequencyIslandLabelFigure" elementIcon="false"/>
+  <labels name="ProcessorTypeLabel" figure="ProcessorTypeLabelFigure"/>
+  <labels name="ProcessorLabel" figure="ProcessorLabelFigure" elementIcon="false"/>
+  <labels name="ProcessorStateLabel" figure="ProcessorStateLabelFigure" elementIcon="false"/>
+  <labels name="ProcessorStateIsWorkingLabel" figure="ProcessorStateFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="ProcessorStateFrequencyLabel" figure="ProcessorStateFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.1"/>
+  <labels name="ProcessorStatePowerConsumptionLabel" figure="ProcessorStateFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.2"/>
+  <labels name="ProcessorStateChangeLabel" figure="ProcessorStateChangeLabelFigure" elementIcon="false"/>
+  <labels name="ProcessorPTypeExternalLabel" figure="ProcessorPTypeExternalLabelFigure" elementIcon="false"/>
+  <labels name="ProcessorVfIslandExternalLabel" figure="ProcessorVfIslandExternalLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>

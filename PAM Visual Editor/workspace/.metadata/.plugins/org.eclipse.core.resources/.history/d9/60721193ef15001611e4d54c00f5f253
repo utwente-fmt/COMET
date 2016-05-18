@@ -1,0 +1,268 @@
+/*
+ * 
+ */
+package Platform_Metamodel.diagram.providers;
+
+/**
+ * @generated
+ */
+public class Platform_MetamodelParserProvider extends org.eclipse.gmf.runtime.common.core.service.AbstractProvider implements org.eclipse.gmf.runtime.common.ui.services.parser.IParserProvider {
+	
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser voltageFrequencyIslandIdentifier_5001Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getVoltageFrequencyIslandIdentifier_5001Parser() {
+		if (voltageFrequencyIslandIdentifier_5001Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Sensation_Common_Metamodel.Sensation_Common_MetamodelPackage.eINSTANCE.getIdentifiable_Identifier()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								voltageFrequencyIslandIdentifier_5001Parser = parser;
+		}
+		return voltageFrequencyIslandIdentifier_5001Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser processorTypeIdentifier_5006Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getProcessorTypeIdentifier_5006Parser() {
+		if (processorTypeIdentifier_5006Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Sensation_Common_Metamodel.Sensation_Common_MetamodelPackage.eINSTANCE.getIdentifiable_Identifier()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								processorTypeIdentifier_5006Parser = parser;
+		}
+		return processorTypeIdentifier_5006Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser processorIdentifier_5007Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getProcessorIdentifier_5007Parser() {
+		if (processorIdentifier_5007Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Sensation_Common_Metamodel.Sensation_Common_MetamodelPackage.eINSTANCE.getIdentifiable_Identifier()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								processorIdentifier_5007Parser = parser;
+		}
+		return processorIdentifier_5007Parser;
+	}
+
+
+	
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser processorStateIdentifier_5002Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getProcessorStateIdentifier_5002Parser() {
+		if (processorStateIdentifier_5002Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Sensation_Common_Metamodel.Sensation_Common_MetamodelPackage.eINSTANCE.getIdentifiable_Identifier()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								processorStateIdentifier_5002Parser = parser;
+		}
+		return processorStateIdentifier_5002Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser processorStateIsWorking_5003Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getProcessorStateIsWorking_5003Parser() {
+		if (processorStateIsWorking_5003Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessorState_IsWorking()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								processorStateIsWorking_5003Parser = parser;
+		}
+		return processorStateIsWorking_5003Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser processorStateFrequency_5004Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getProcessorStateFrequency_5004Parser() {
+		if (processorStateFrequency_5004Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessorState_Frequency()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								processorStateFrequency_5004Parser = parser;
+		}
+		return processorStateFrequency_5004Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser processorStatePowerConsumption_5005Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getProcessorStatePowerConsumption_5005Parser() {
+		if (processorStatePowerConsumption_5005Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessorState_PowerConsumption()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								processorStatePowerConsumption_5005Parser = parser;
+		}
+		return processorStatePowerConsumption_5005Parser;
+	}
+
+
+	
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser processorStateChangePowerCost_6001Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getProcessorStateChangePowerCost_6001Parser() {
+		if (processorStateChangePowerCost_6001Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessorStateChange_PowerCost()
+			};
+				Platform_Metamodel.diagram.parsers.MessageFormatParser parser = new Platform_Metamodel.diagram.parsers.MessageFormatParser(features);
+								processorStateChangePowerCost_6001Parser = parser;
+		}
+		return processorStateChangePowerCost_6001Parser;
+	}
+
+
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(int visualID) {
+		switch (visualID) {
+				case Platform_Metamodel.diagram.edit.parts.VoltageFrequencyIslandIdentifierEditPart.VISUAL_ID: return getVoltageFrequencyIslandIdentifier_5001Parser();
+		case Platform_Metamodel.diagram.edit.parts.ProcessorTypeIdentifierEditPart.VISUAL_ID: return getProcessorTypeIdentifier_5006Parser();
+		case Platform_Metamodel.diagram.edit.parts.ProcessorIdentifierEditPart.VISUAL_ID: return getProcessorIdentifier_5007Parser();
+				case Platform_Metamodel.diagram.edit.parts.ProcessorStateIdentifierEditPart.VISUAL_ID: return getProcessorStateIdentifier_5002Parser();
+		case Platform_Metamodel.diagram.edit.parts.ProcessorStateIsWorkingEditPart.VISUAL_ID: return getProcessorStateIsWorking_5003Parser();
+		case Platform_Metamodel.diagram.edit.parts.ProcessorStateFrequencyEditPart.VISUAL_ID: return getProcessorStateFrequency_5004Parser();
+		case Platform_Metamodel.diagram.edit.parts.ProcessorStatePowerConsumptionEditPart.VISUAL_ID: return getProcessorStatePowerConsumption_5005Parser();
+				case Platform_Metamodel.diagram.edit.parts.ProcessorStateChangePowerCostEditPart.VISUAL_ID: return getProcessorStateChangePowerCost_6001Parser();
+		}
+		return null;
+	}
+		/**
+ * Utility method that consults ParserService
+ * @generated
+ */
+	public static org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(org.eclipse.gmf.runtime.emf.type.core.IElementType type, org.eclipse.emf.ecore.EObject object, String parserHint) {
+		return org.eclipse.gmf.runtime.common.ui.services.parser.ParserService.getInstance().getParser(new HintAdapter(type, object, parserHint));
+	}
+		/**
+ * @generated
+ */
+	public org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(
+			org.eclipse.core.runtime.IAdaptable hint) {
+		String vid = (String) hint.getAdapter(String.class);
+		if (vid != null) {
+			return getParser(Platform_Metamodel.diagram.part.Platform_MetamodelVisualIDRegistry.getVisualID(vid));
+		}
+		org.eclipse.gmf.runtime.notation.View view =
+				(org.eclipse.gmf.runtime.notation.View) hint.getAdapter(org.eclipse.gmf.runtime.notation.View.class);
+		if (view != null) {
+			return getParser(Platform_Metamodel.diagram.part.Platform_MetamodelVisualIDRegistry.getVisualID(view));
+		}
+		return null;
+	}
+
+		/**
+ * @generated
+ */
+	public boolean provides(org.eclipse.gmf.runtime.common.core.service.IOperation operation) {
+		if (operation instanceof org.eclipse.gmf.runtime.common.ui.services.parser.GetParserOperation) {
+			org.eclipse.core.runtime.IAdaptable hint =
+					((org.eclipse.gmf.runtime.common.ui.services.parser.GetParserOperation) operation).getHint();
+			if (Platform_Metamodel.diagram.providers.Platform_MetamodelElementTypes.getElement(hint) == null) {
+				return false;
+			}
+			return getParser(hint) != null;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	private static class HintAdapter extends org.eclipse.gmf.runtime.emf.ui.services.parser.ParserHintAdapter {
+
+		/**
+ * @generated
+ */
+		private final org.eclipse.gmf.runtime.emf.type.core.IElementType elementType;
+
+		/**
+ * @generated
+ */
+		public HintAdapter(org.eclipse.gmf.runtime.emf.type.core.IElementType type,
+				org.eclipse.emf.ecore.EObject object, String parserHint) {
+			super(object, parserHint);
+			assert type != null;
+			elementType = type;
+		}
+
+		/**
+ * @generated
+ */
+		public Object getAdapter(Class adapter) {
+			if (org.eclipse.gmf.runtime.emf.type.core.IElementType.class.equals(adapter)) {
+				return elementType;
+			}
+			return super.getAdapter(adapter);
+		}
+	}
+
+	}

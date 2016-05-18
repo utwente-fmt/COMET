@@ -1,0 +1,35 @@
+	/*
+ * 
+ */
+package Platform_Metamodel.diagram.navigator;
+
+	/**
+ * @generated
+ */
+public class Platform_MetamodelNavigatorSorter  extends org.eclipse.jface.viewers.ViewerSorter {
+
+		/**
+ * @generated
+ */
+private static final int GROUP_CATEGORY = 7003;
+	
+	/**
+ * @generated
+ */
+private static final int SHORTCUTS_CATEGORY = 7002;
+		
+		/**
+ * @generated
+ */
+public int category(Object element) {
+	if (element instanceof Platform_Metamodel.diagram.navigator.Platform_MetamodelNavigatorItem) {
+		Platform_Metamodel.diagram.navigator.Platform_MetamodelNavigatorItem item = (Platform_Metamodel.diagram.navigator.Platform_MetamodelNavigatorItem) element;
+			if (item.getView().getEAnnotation("Shortcut") != null) {  //$NON-NLS-1$
+			return SHORTCUTS_CATEGORY;
+		}
+			return Platform_Metamodel.diagram.part.Platform_MetamodelVisualIDRegistry.getVisualID(item.getView());
+	}
+	return GROUP_CATEGORY;
+}
+
+    }

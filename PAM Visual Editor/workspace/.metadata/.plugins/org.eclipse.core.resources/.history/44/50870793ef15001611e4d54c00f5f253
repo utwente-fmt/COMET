@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+package Platform_Metamodel.diagram.providers;
+
+/**
+ * @generated
+ */
+public class Platform_MetamodelIconProvider extends org.eclipse.gmf.tooling.runtime.providers.DefaultElementTypeIconProvider implements org.eclipse.gmf.runtime.common.ui.services.icon.IIconProvider {
+
+		/**
+ * @generated
+ */
+	public Platform_MetamodelIconProvider() {
+		super(Platform_Metamodel.diagram.providers.Platform_MetamodelElementTypes.TYPED_INSTANCE);
+	}
+
+	}

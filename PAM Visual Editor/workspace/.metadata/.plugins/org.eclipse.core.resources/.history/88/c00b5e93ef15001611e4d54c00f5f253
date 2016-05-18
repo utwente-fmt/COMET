@@ -1,0 +1,83 @@
+/*
+ * 
+ */
+package Platform_Metamodel.diagram.part;
+
+/**
+ * @generated
+ */
+public class Platform_MetamodelCreationWizardPage extends
+			org.eclipse.ui.dialogs.WizardNewFileCreationPage
+			{
+
+	/**
+ * @generated
+ */
+	private final String fileExtension;
+
+	/**
+ * @generated
+ */
+	public Platform_MetamodelCreationWizardPage(String pageName,
+			org.eclipse.jface.viewers.IStructuredSelection selection, String fileExtension) {
+		super(pageName, selection);
+		this.fileExtension = fileExtension;
+	}
+
+	/**
+	 * Override to create files with this extension.
+	 * 
+	 * @generated
+	 */
+	protected String getExtension() {
+		return fileExtension;
+	}
+
+	/**
+ * @generated
+ */
+	public org.eclipse.emf.common.util.URI getURI() {
+			return org.eclipse.emf.common.util.URI.createPlatformResourceURI(getFilePath().toString(), false);
+		}
+	
+	/**
+ * @generated
+ */
+	protected org.eclipse.core.runtime.IPath getFilePath() {
+		org.eclipse.core.runtime.IPath path = getContainerFullPath();
+		if (path == null) {
+			path = new org.eclipse.core.runtime.Path(""); //$NON-NLS-1$
+		}
+		String fileName = getFileName();
+		if (fileName != null) {
+			path = path.append(fileName);
+		}
+		return path;
+	}
+	
+	/**
+ * @generated
+ */
+	public void createControl(org.eclipse.swt.widgets.Composite parent) {
+		super.createControl(parent);
+		setFileName(Platform_Metamodel.diagram.part.Platform_MetamodelDiagramEditorUtil.getUniqueFileName(
+				getContainerFullPath(), getFileName(), getExtension()));
+		setPageComplete(validatePage());
+	}
+
+	/**
+ * @generated
+ */
+	protected boolean validatePage() {
+		if (!super.validatePage()) {
+			return false;
+		}
+		String extension = getExtension();
+		if (extension != null && !getFilePath().toString().endsWith("." + extension)) {
+			setErrorMessage(org.eclipse.osgi.util.NLS.bind(
+					Platform_Metamodel.diagram.part.Messages.Platform_MetamodelCreationWizardPageExtensionError, extension));
+			return false;
+		}
+		return true;
+	}
+	}

@@ -1,0 +1,203 @@
+/*
+ * 
+ */
+package Platform_Metamodel.diagram.providers;
+
+/**
+ * @generated
+ */
+public class Platform_MetamodelElementTypes {
+
+		/**
+ * @generated
+ */
+private Platform_MetamodelElementTypes() {
+}
+	
+		/**
+ * @generated
+ */
+private static java.util.Map<org.eclipse.gmf.runtime.emf.type.core.IElementType, org.eclipse.emf.ecore.ENamedElement> elements;
+
+	/**
+ * @generated
+ */
+private static org.eclipse.gmf.tooling.runtime.providers.DiagramElementTypeImages elementTypeImages = new org.eclipse.gmf.tooling.runtime.providers.DiagramElementTypeImages(	Platform_Metamodel.diagram.part.Platform_MetamodelDiagramEditorPlugin.getInstance().getItemProvidersAdapterFactory());
+
+	/**
+ * @generated
+ */
+private static java.util.Set<org.eclipse.gmf.runtime.emf.type.core.IElementType> KNOWN_ELEMENT_TYPES;
+	
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType PlatformApplicationModelRoot_1000 = getElementType("PlatformMetamodelGMFProject.diagram.PlatformApplicationModelRoot_1000");  //$NON-NLS-1$
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType VoltageFrequencyIsland_2001 = getElementType("PlatformMetamodelGMFProject.diagram.VoltageFrequencyIsland_2001");  //$NON-NLS-1$
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType ProcessorType_2002 = getElementType("PlatformMetamodelGMFProject.diagram.ProcessorType_2002");  //$NON-NLS-1$
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType Processor_2003 = getElementType("PlatformMetamodelGMFProject.diagram.Processor_2003");  //$NON-NLS-1$
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType ProcessorState_3001 = getElementType("PlatformMetamodelGMFProject.diagram.ProcessorState_3001");  //$NON-NLS-1$
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType ProcessorStateChange_4001 = getElementType("PlatformMetamodelGMFProject.diagram.ProcessorStateChange_4001");  //$NON-NLS-1$
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType ProcessorPType_4002 = getElementType("PlatformMetamodelGMFProject.diagram.ProcessorPType_4002");  //$NON-NLS-1$
+				/**
+ * @generated
+ */
+public static final org.eclipse.gmf.runtime.emf.type.core.IElementType ProcessorVfIsland_4003 = getElementType("PlatformMetamodelGMFProject.diagram.ProcessorVfIsland_4003");  //$NON-NLS-1$
+		
+		/**
+ * @generated
+ */
+public static org.eclipse.jface.resource.ImageDescriptor getImageDescriptor(org.eclipse.emf.ecore.ENamedElement element) {
+	return elementTypeImages.getImageDescriptor(element);
+}
+
+		/**
+ * @generated
+ */
+public static org.eclipse.swt.graphics.Image getImage(org.eclipse.emf.ecore.ENamedElement element) {
+	return elementTypeImages.getImage(element);
+}
+
+		/**
+ * @generated
+ */
+public static org.eclipse.jface.resource.ImageDescriptor getImageDescriptor(org.eclipse.core.runtime.IAdaptable hint) {
+	return getImageDescriptor(getElement(hint));
+}
+
+		/**
+ * @generated
+ */
+public static org.eclipse.swt.graphics.Image getImage(org.eclipse.core.runtime.IAdaptable hint) {
+	return getImage(getElement(hint));
+}
+
+		/**
+ * Returns 'type' of the ecore object associated with the hint.
+ * 
+ * @generated
+ */
+public static org.eclipse.emf.ecore.ENamedElement getElement(org.eclipse.core.runtime.IAdaptable hint) {
+	Object type = hint.getAdapter(org.eclipse.gmf.runtime.emf.type.core.IElementType.class);
+	if (elements == null) {
+		elements = new java.util.IdentityHashMap<org.eclipse.gmf.runtime.emf.type.core.IElementType, org.eclipse.emf.ecore.ENamedElement>();
+		
+	elements.put(PlatformApplicationModelRoot_1000, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getPlatformApplicationModelRoot());
+					
+	
+	elements.put(VoltageFrequencyIsland_2001, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getVoltageFrequencyIsland());
+					
+	
+	elements.put(ProcessorType_2002, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessorType());
+					
+	
+	elements.put(Processor_2003, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessor());
+					
+	
+	elements.put(ProcessorState_3001, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessorState());
+							
+	
+	elements.put(ProcessorStateChange_4001, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessorStateChange());
+					
+	elements.put(ProcessorPType_4002, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessor_PType());
+					
+	elements.put(ProcessorVfIsland_4003, Platform_Metamodel.Platform_MetamodelPackage.eINSTANCE.getProcessor_VfIsland());
+			}
+	return (org.eclipse.emf.ecore.ENamedElement) elements.get(type);
+}
+
+		/**
+ * @generated
+ */
+private static org.eclipse.gmf.runtime.emf.type.core.IElementType getElementType(String id) {
+	return org.eclipse.gmf.runtime.emf.type.core.ElementTypeRegistry.getInstance().getType(id);
+}
+
+		/**
+ * @generated
+ */
+public static boolean isKnownElementType(org.eclipse.gmf.runtime.emf.type.core.IElementType elementType) {
+	if (KNOWN_ELEMENT_TYPES == null) {
+		KNOWN_ELEMENT_TYPES = new java.util.HashSet<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+			KNOWN_ELEMENT_TYPES.add(PlatformApplicationModelRoot_1000);
+		KNOWN_ELEMENT_TYPES.add(VoltageFrequencyIsland_2001);
+		KNOWN_ELEMENT_TYPES.add(ProcessorType_2002);
+		KNOWN_ELEMENT_TYPES.add(Processor_2003);
+		KNOWN_ELEMENT_TYPES.add(ProcessorState_3001);
+		KNOWN_ELEMENT_TYPES.add(ProcessorStateChange_4001);
+		KNOWN_ELEMENT_TYPES.add(ProcessorPType_4002);
+		KNOWN_ELEMENT_TYPES.add(ProcessorVfIsland_4003);
+		}
+	return KNOWN_ELEMENT_TYPES.contains(elementType);
+}
+	
+		/**
+ * @generated
+ */
+	public static org.eclipse.gmf.runtime.emf.type.core.IElementType getElementType(int visualID) {
+		switch (visualID) {
+				case Platform_Metamodel.diagram.edit.parts.PlatformApplicationModelRootEditPart.VISUAL_ID:		return PlatformApplicationModelRoot_1000;
+	case Platform_Metamodel.diagram.edit.parts.VoltageFrequencyIslandEditPart.VISUAL_ID:		return VoltageFrequencyIsland_2001;
+	case Platform_Metamodel.diagram.edit.parts.ProcessorTypeEditPart.VISUAL_ID:		return ProcessorType_2002;
+	case Platform_Metamodel.diagram.edit.parts.ProcessorEditPart.VISUAL_ID:		return Processor_2003;
+	case Platform_Metamodel.diagram.edit.parts.ProcessorStateEditPart.VISUAL_ID:		return ProcessorState_3001;
+	case Platform_Metamodel.diagram.edit.parts.ProcessorStateChangeEditPart.VISUAL_ID:		return ProcessorStateChange_4001;
+	case Platform_Metamodel.diagram.edit.parts.ProcessorPTypeEditPart.VISUAL_ID:		return ProcessorPType_4002;
+	case Platform_Metamodel.diagram.edit.parts.ProcessorVfIslandEditPart.VISUAL_ID:		return ProcessorVfIsland_4003;
+		}
+		return null;
+	}
+	
+		/**
+ * @generated
+ */
+	public static final org.eclipse.gmf.tooling.runtime.providers.DiagramElementTypes TYPED_INSTANCE 
+		= new org.eclipse.gmf.tooling.runtime.providers.DiagramElementTypes(elementTypeImages) {
+		
+		/**
+ * @generated
+ */
+		@Override
+
+		public boolean isKnownElementType(org.eclipse.gmf.runtime.emf.type.core.IElementType elementType) {
+			return Platform_Metamodel.diagram.providers.Platform_MetamodelElementTypes.isKnownElementType(elementType);
+		}
+		
+		/**
+ * @generated
+ */
+		@Override
+
+		public org.eclipse.gmf.runtime.emf.type.core.IElementType getElementTypeForVisualId(int visualID) {
+			return Platform_Metamodel.diagram.providers.Platform_MetamodelElementTypes.getElementType(visualID);
+		}
+		
+		/**
+ * @generated
+ */
+		@Override
+
+		public org.eclipse.emf.ecore.ENamedElement getDefiningNamedElement(org.eclipse.core.runtime.IAdaptable elementTypeAdapter) {
+			return Platform_Metamodel.diagram.providers.Platform_MetamodelElementTypes.getElement(elementTypeAdapter);
+		}
+	}; 
+
+	}

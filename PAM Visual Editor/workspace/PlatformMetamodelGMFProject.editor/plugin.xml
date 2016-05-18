@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated PlatformMetamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="Platform_Metamodel.presentation.Platform_MetamodelModelWizardID"
+            name="%_UI_Platform_MetamodelModelWizard_label"
+            class="Platform_Metamodel.presentation.Platform_MetamodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Platform_MetamodelModelFile.gif">
+         <description>%_UI_Platform_MetamodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated PlatformMetamodel -->
+      <editor
+            id="Platform_Metamodel.presentation.Platform_MetamodelEditorID"
+            name="%_UI_Platform_MetamodelEditor_label"
+            icon="icons/full/obj16/Platform_MetamodelModelFile.gif"
+            extensions="platform_metamodel"
+            class="Platform_Metamodel.presentation.Platform_MetamodelEditor"
+            contributorClass="Platform_Metamodel.presentation.Platform_MetamodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

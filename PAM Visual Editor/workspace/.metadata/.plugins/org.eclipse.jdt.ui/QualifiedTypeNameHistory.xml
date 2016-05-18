@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Platform_Metamodel.figures.ProcessorFigure"/>
+<fullyQualifiedTypeName name="Platform_Metamodel.figures.ProcessorTypeFigure"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Rectangle"/>
+<fullyQualifiedTypeName name="org.eclipse.draw2d.geometry.Rectangle"/>
+<fullyQualifiedTypeName name="org.eclipse.gmf.runtime.notation.Alignment"/>
+<fullyQualifiedTypeName name="org.eclipse.draw2d.StackLayout"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Color"/>
+</qualifiedTypeNameHistroy>

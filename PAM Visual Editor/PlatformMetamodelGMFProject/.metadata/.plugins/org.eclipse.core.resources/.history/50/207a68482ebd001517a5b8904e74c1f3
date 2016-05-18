@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:platform_metamodel="http://www.utwente.nl/sensation/platform_metamodel" xmi:id="_pO0g0L0tEeW1YJnCnPMMNQ" type="Platform_Metamodel" name="default.platform_metamodel_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_ugi5IL0tEeW1YJnCnPMMNQ" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ugi5Ir0tEeW1YJnCnPMMNQ" type="5001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ugi5I70tEeW1YJnCnPMMNQ" y="5"/>
+    </children>
+    <element xmi:type="platform_metamodel:VoltageFrequencyIsland" href="default.platform_metamodel#//@islands.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ugi5Ib0tEeW1YJnCnPMMNQ" x="94" y="57"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_uuFl4L0tEeW1YJnCnPMMNQ" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uuFl4r0tEeW1YJnCnPMMNQ" type="5007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uuFl470tEeW1YJnCnPMMNQ" y="5"/>
+    </children>
+    <element xmi:type="platform_metamodel:Processor" href="default.platform_metamodel#//@processors.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uuFl4b0tEeW1YJnCnPMMNQ" x="510" y="74"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_u6b_0L0tEeW1YJnCnPMMNQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_u6b_070tEeW1YJnCnPMMNQ" type="5006">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_u6b_1L0tEeW1YJnCnPMMNQ" y="5"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_u6b_1b0tEeW1YJnCnPMMNQ" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_u6b_0b0tEeW1YJnCnPMMNQ"/>
+    <element xmi:type="platform_metamodel:ProcessorType" href="default.platform_metamodel#//@processorTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u6b_0r0tEeW1YJnCnPMMNQ" x="318" y="357" width="606" height="364"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_pO0g0b0tEeW1YJnCnPMMNQ"/>
+  <element xmi:type="platform_metamodel:PlatformApplicationModelRoot" href="default.platform_metamodel#/"/>
+</notation:Diagram>

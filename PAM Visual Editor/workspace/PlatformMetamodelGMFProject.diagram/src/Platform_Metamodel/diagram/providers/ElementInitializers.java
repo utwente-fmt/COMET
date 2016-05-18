@@ -1,0 +1,28 @@
+/*
+ * 
+ */
+package Platform_Metamodel.diagram.providers;
+
+/**
+ * @generated
+ */
+public class ElementInitializers {
+
+	protected ElementInitializers() {
+		// use #getInstance to access cached instance
+	}
+
+	/**
+	 * @generated
+	 */
+	public static ElementInitializers getInstance() {
+		ElementInitializers cached = Platform_Metamodel.diagram.part.Platform_MetamodelDiagramEditorPlugin
+				.getInstance().getElementInitializers();
+		if (cached == null) {
+			Platform_Metamodel.diagram.part.Platform_MetamodelDiagramEditorPlugin
+					.getInstance().setElementInitializers(
+							cached = new ElementInitializers());
+		}
+		return cached;
+	}
+}

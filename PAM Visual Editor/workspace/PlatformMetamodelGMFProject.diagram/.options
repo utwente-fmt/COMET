@@ -1,0 +1,7 @@
+# Tracing options for the PlatformMetamodelGMFProject.diagram plug-in
+
+# Common issues
+PlatformMetamodelGMFProject.diagram/debug=false
+
+# Visual IDs
+PlatformMetamodelGMFProject.diagram/debug/visualID=false

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platform_metamodel:PlatformApplicationModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platform_metamodel="http://www.utwente.nl/sensation/platform_metamodel">
+  <islands/>
+  <processorTypes>
+    <possibleStates identifier="S1">
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.0" target="//@processorTypes.0/@possibleStates.1" powerCost="10"/>
+    </possibleStates>
+    <possibleStates identifier="S2">
+      <possibleStateChanges source="//@processorTypes.0/@possibleStates.1" target="//@processorTypes.0/@possibleStates.0" powerCost="5"/>
+    </possibleStates>
+  </processorTypes>
+  <processors/>
+</platform_metamodel:PlatformApplicationModelRoot>
